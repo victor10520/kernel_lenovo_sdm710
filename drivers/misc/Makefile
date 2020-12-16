@@ -67,6 +67,10 @@ obj-$(CONFIG_TUSB1064_XR_MISC) += tusb1064.o
 obj-$(CONFIG_VXR200_XR_MISC) += vxr7200.o
 
 
+#Huaqin add for sim tray by xudongfang at 20180917 start
+obj-$(CONFIG_HQ_SIM_TRAY_CHECK)   += sim_tray/
+#Huaqin add for sim tray by xudongfang at 20180917 end
+
 lkdtm-$(CONFIG_LKDTM)		+= lkdtm_core.o
 lkdtm-$(CONFIG_LKDTM)		+= lkdtm_bugs.o
 lkdtm-$(CONFIG_LKDTM)		+= lkdtm_heap.o
